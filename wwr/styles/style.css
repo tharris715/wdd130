@@ -226,6 +226,93 @@ footer .social img {
     padding-top: 15px;
 }
 
+
+#river-hero {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#river-hero-img {
+    width: 100%;
+}
+#river-hero-msg {
+    text-align: center;
+    margin-top: -250px;
+    color: #FEFAE0;
+    font-size: 2em;
+}
+
+#river-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.h2-rivers {
+    grid-column: 1/4;
+    text-align: center;
+    color: #FEFAE0;
+}
+
+.river1 {
+    margin: 20px;
+    background-color: #606C38;
+    border: 5px solid #283618;
+    grid-column:1/4;
+    grid-row: 1/2;
+    
+}
+.river1-img {
+    width: 500px;
+    float:right;
+    padding-top: 10%;
+    padding-left: 1%;
+    padding-right: 0.5%;
+}
+.river1-para {
+    text-align: left;
+    padding-left: 1%;
+    color: #FEFAE0;
+}
+.river2 {
+    margin: 20px;
+    background-color: #606C38;
+    border: 5px solid #283618;
+    grid-column:1/4;
+    grid-row: 2/3;
+}
+.river2-img {
+    width: 500px;
+    float: left;
+    padding-top: 10%;
+    padding-right: 1%;
+    padding-left: 0.5%;
+}
+.river2-para {
+    text-align: left;
+    padding-left: 1%;
+    color: #FEFAE0;
+}
+.river3 {
+    margin: 20px;
+    background-color: #606C38;
+    border: 5px solid #283618;
+    grid-column:1/4;
+    grid-row: 3/4;
+}
+.river3-img {
+    width: 500px;
+    float: right;
+    padding-top: 10%;
+    padding-left: 1%;
+    padding-right: 0.5%;
+}
+.river3-para {
+    text-align: left;
+    padding-left: 1%;
+    color: #FEFAE0;
+}
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
