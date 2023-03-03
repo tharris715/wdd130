@@ -1,0 +1,23 @@
+
+.top-image img {
+  width: 1500px;
+  margin: 0 auto;
+}
+
+.row {
+  width: 1400px;
+  display: block;
+  text-align: center;
+  background-color: gray;
+  margin-top: -5px;
+  padding: 50px;
+}
+  
+.row img {
+  width: 200px; 
+  margin: 0 100px;
+  border-radius: 50%;
+  border: solid 10px;
+  border-color: rgb(74, 72, 72); 
+}
+  
