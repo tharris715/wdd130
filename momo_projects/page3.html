@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Momo's Projects | Challenging Projects</title>
+</head>
+<body>
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/Momo's Projects-logos.jpeg" alt="Momo's Projects crochet logo">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="page2.html">Easy Projects</a>
+            <a href="page3.html">Challenging Projects</a>
+        </nav>
+    </header>    
+    <main>
+        <section id="section1_3">
+            <p>Displayed here are the more difficult pieces of work. These take longer 
+            to make or take a little more skill that the projects on the easy page. 
+            The projects that take the most time by far are the cross-stitch pieces. 
+            The Pokemon cross-stitch was the most ambitious project I have taken on. 
+            This represents about 3 years of working on it after college classes or work. 
+            It was finished around the same time my son was born and now hangs in his room.</p>    
+        </section>
+        <section class="techniques">
+            <h2>Techniques</h2>
+            <p>Some of the patterns in these projects may be a bit more difficult, 
+            including the phoenix and dragon. These took more effort than many of
+            the other projects, because of the detail involved. These projects will take 
+            longer, and so you should plan ahead if you wish to make them.</p>            
+            <p>Stitches and techniques used for these projects includeThe shell stitch which 
+            uses a series of double crochets into the same stitch to create a shell-like pattern. 
+            The popcorn stitch which involves making a cluster of stitches in the same stitch to 
+            create a raised texture. However, these projects also use many of the easier stitches as 
+            well, it's just a matter of how you use stitches that make a project look more complicated.</p>
+        </section>
+        <div class="container">
+
+            <!-- Full-width images with number text -->
+            <div class="mySlides">
+              <div class="numbertext">1 / 8</div>
+                <img src="images/phoenix.jpg" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">2 / 8</div>
+                <img src="images/phoenix_back.jpg" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">3 / 8</div>
+                <img src="images/dragon.jpg" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">4 / 8</div>
+                <img src="images/cross_stitch.jpg" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">5 / 8</div>
+                <img src="images/unicorn2_front.jpg" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">6 / 8</div>
+                <img src="images/unicorn2_back.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">7 / 8</div>
+                  <img src="images/stormlight.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">8 / 8</div>
+                  <img src="images/highland.jpg" style="width:100%">
+            </div>            
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+            <!-- Image text -->
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+          
+            <!-- Thumbnail images -->
+            <div class="row">
+              <div class="column">
+                <img class="demo cursor" src="images/phoenix.jpg" style="width:100%" onclick="currentSlide(1)" alt="crochet phoenix front view">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/phoenix_back.jpg" style="width:100%" onclick="currentSlide(2)" alt="crochet phoenix back view">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/dragon.jpg" style="width:100%" onclick="currentSlide(3)" alt="crochet dragon">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/cross_stitch.jpg" style="width:100%" onclick="currentSlide(4)" alt="Pokemon cross-stitch">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/unicorn2_front.jpg" style="width:100%" onclick="currentSlide(5)" alt="crochet unicorn front view">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/unicorn2_back.jpg" style="width:100%" onclick="currentSlide(6)" alt="crochet unicorn back view">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/stormlight.jpg" style="width:100%" onclick="currentSlide(7)" alt="crochet stormlight archive symbol blanket">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/highland.jpg" style="width:100%" onclick="currentSlide(8)" alt="crochet highland cow">
+              </div>
+                            
+              <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("demo");
+                  let captionText = document.getElementById("caption");
+                  if (n > slides.length) {slideIndex = 1}
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";
+                  dots[slideIndex-1].className += " active";
+                  captionText.innerHTML = dots[slideIndex-1].alt;
+                }
+                </script>
+            </div>
+          </div>
+    </main>   
+    <footer>
+        <p>Momo's Projects &copy; 2023</p>
+        <p><a href="site-plan.html">Site Plan</a></p>        
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
