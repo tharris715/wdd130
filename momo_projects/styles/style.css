@@ -85,12 +85,14 @@ footer .social img {
   
   /* Position the image container (needed to position the left and right arrows) */
   .container {
-    position: relative;
+    position:relative;
   }
   
   /* Hide the images by default */
   .mySlides {
     display: none;
+    text-align: center;
+    background-color: #CFCCD6;
   }
   
   /* Add a pointer when hovering over the thumbnail images */
@@ -107,7 +109,7 @@ footer .social img {
     width: auto;
     padding: 16px;
     margin-top: -50px;
-    color: white;
+    color: #322E18;
     font-weight: bold;
     font-size: 20px;
     border-radius: 0 3px 3px 0;
@@ -124,12 +126,12 @@ footer .social img {
   /* On hover, add a black background color with a little bit see-through */
   .prev:hover,
   .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #BBC2E2;
   }
   
   /* Number text (1/3 etc) */
   .numbertext {
-    color: #f2f2f2;
+    color: #322E18;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
@@ -139,9 +141,9 @@ footer .social img {
   /* Container for image text */
   .caption-container {
     text-align: center;
-    background-color: #222;
+    background-color: #CFCCD6;
     padding: 2px 16px;
-    color: white;
+    color: #322E18;
   }
   
   .row:after {
