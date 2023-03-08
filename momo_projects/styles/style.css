@@ -24,9 +24,8 @@ nav {
     text-align: center;
     color: black;
     font-size: 4em;
+    font-family: "Hachi Maru Pop", Helvetica, sans-serif;
 }
-
-
 
 #hero-img {
     width: 100%;
@@ -51,7 +50,7 @@ footer {
     background-color: #BBC2E2;
     color: #322E18;
     padding: 25px 50px;
-    margin-top: 200px;
+    margin-top: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
