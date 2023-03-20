@@ -28,18 +28,7 @@
             My work involves research with mice, hence my interest in making mice, 
             and coworkers and friends would ask for them as well.</p>
         </section>
-        <section class="techniques">
-            <h2>Techniques</h2>
-            <p>These projects use more basic stitches. These would be better choices for those
-            newer to crochet. However they can still pose a challenge, especially with 
-            the smaller pieces, which need small and tight stitches, which can make it 
-            tricky to move the hook through the stitches without breaking the yarn. 
-            You should test the tensile strength of the yarn so you know if you can pull 
-            on it hard enough to make the small stitches.</p>                
-            <p>Stitches and techniques used for these projects include the single crochet stitch, the most basic stitch in crochet.
-            The half double crochet stitch which is slightly taller than the single crochet stitch. 
-            As well as the the double crochet stitch and treble crochet stitch which are both taller still. </p>
-        </section>
+        
         <div class="container">
 
             <!-- Full-width images with number text -->
@@ -295,26 +284,50 @@
               </script>
             </div>
           </div>
-
-
-        <ul class="patterns">
-          <li>Mini dino, Pikachu + pokeball, Squirtle (adapted from TMNT pattern), 
-          Butterfree, Eevee, Gengar, and Snorlax patterns were found <a href="https://amiamour.com/">here</a>.</li>
-          <li>Brown cow and wolf patterns were found <a href="https://jesshuff.com/">here</a>.</li>
-          <li>Snowflake patterns were found <a href="https://crochetpedia.com/crochet-snowflakes-mini-cal/">here</a>.</li>
-          <li>Black cat pattern was found <a href="Https://stringydingding.com/black-cat-amigurumi-free-crochet-pattern">here</a>.</li>
-          <li>Yellow cat pattern was found <a href="https://www.amigurumi.com/Cats/Dumpling-Kitty/">here</a>.</li>
-          <li>Pumpkin hat pattern was found <a href="https://www.hanjancrochet.com">here</a>.</li>
-          <li>Ice cream rattle pattern was found <a href="https://www.yarnspirations.com">here</a>.</li>
-          <li>Small mouse pattern was found <a href="pinkmouseboutique.com">here</a>.</li>
-          <li>Vaporeon pattern was found <a href="https://53stitches.com/vaporeon/">here</a>.</li>
-          <li>Fish pattern was found <a href="yourcrochet.com">here</a>.</li>
-          <li>Whale patterns were found <a href="wordpress.com">here</a>.</li>
-          <li>Axolotl pattern was found <a href="anvisgranny.com">here</a>.</li>
-          <li>Patterns not listed were custom creations or came from patterns not available online.</li>
-        </ul>
-
-
+          <section class="techniques">
+            <h2>Techniques</h2>
+            <p>These projects use more basic stitches. These would be better choices for those
+            newer to crochet. However they can still pose a challenge, especially with 
+            the smaller pieces, which need small and tight stitches, which can make it 
+            tricky to move the hook through the stitches without breaking the yarn. 
+            You should test the tensile strength of the yarn so you know if you can pull 
+            on it hard enough to make the small stitches.</p>                
+            <p>Stitches and techniques used for these projects include the single crochet stitch, the most basic stitch in crochet.
+            The half double crochet stitch which is slightly taller than the single crochet stitch. 
+            As well as the the double crochet stitch and treble crochet stitch which are both taller still. </p>
+        </section>
+          <button type="button" class="collapsible">Pattern Links</button>
+            <ul class="patterns">
+              <li>Mini dino, Pikachu + pokeball, Squirtle (adapted from TMNT pattern), 
+                Butterfree, Eevee, Gengar, and Snorlax patterns were found <a href="https://amiamour.com/">here</a>.</li>
+              <li>Brown cow and wolf patterns were found <a href="https://jesshuff.com/">here</a>.</li>
+              <li>Snowflake patterns were found <a href="https://crochetpedia.com/crochet-snowflakes-mini-cal/">here</a>.</li>
+              <li>Black cat pattern was found <a href="Https://stringydingding.com/black-cat-amigurumi-free-crochet-pattern">here</a>.</li>
+              <li>Yellow cat pattern was found <a href="https://www.amigurumi.com/Cats/Dumpling-Kitty/">here</a>.</li>
+              <li>Pumpkin hat pattern was found <a href="https://www.hanjancrochet.com">here</a>.</li>
+              <li>Ice cream rattle pattern was found <a href="https://www.yarnspirations.com">here</a>.</li>
+              <li>Small mouse pattern was found <a href="pinkmouseboutique.com">here</a>.</li>
+              <li>Vaporeon pattern was found <a href="https://53stitches.com/vaporeon/">here</a>.</li>
+              <li>Fish pattern was found <a href="yourcrochet.com">here</a>.</li>
+              <li>Whale patterns were found <a href="wordpress.com">here</a>.</li>
+              <li>Axolotl pattern was found <a href="anvisgranny.com">here</a>.</li>
+              <li>Patterns not listed were custom creations or came from patterns not available online.</li>
+            </ul>
+          <script> 
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var patterns = this.nextElementSibling;
+                if (patterns.style.display === "block") {
+                  patterns.style.display = "none";
+                } else {
+                  patterns.style.display = "block";
+                }
+              });
+            }
+          </script>
       </section>
     </main>
     <footer>

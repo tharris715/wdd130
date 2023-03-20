@@ -121,7 +121,7 @@ h2 {
 }
 
 p {
-  font-family: Amiko, Helvetica, sans-serif;;
+  font-family: Amiko, Helvetica, sans-serif;
 }
 
 #background_info {
@@ -140,6 +140,50 @@ p {
 
 #hometext h2{
   text-align: center;
+}
+
+#section1_2, #section1_3 {
+  border: solid black;
+  background: #cfccd674;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+
+.techniques {
+  border: solid black;
+  background: #cfccd674;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  color: #322E18;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 1.5em;
+  font-family: "Hachi Maru Pop", Helvetica, sans-serif;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #CFCCD6;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.patterns {
+  padding: 5px 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #CFCCD6;
+  font-family: Amiko, Helvetica, sans-serif;
 }
 
 

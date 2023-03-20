@@ -27,18 +27,7 @@
             This represents about 3 years of working on it after college classes or work. 
             It was finished around the same time my son was born and now hangs in his room.</p>    
         </section>
-        <section class="techniques">
-            <h2>Techniques</h2>
-            <p>Some of the patterns in these projects may be a bit more difficult, 
-            including the phoenix and dragon. These took more effort than many of
-            the other projects, because of the detail involved. These projects will take 
-            longer, and so you should plan ahead if you wish to make them.</p>            
-            <p>Stitches and techniques used for these projects includeThe shell stitch which 
-            uses a series of double crochets into the same stitch to create a shell-like pattern. 
-            The popcorn stitch which involves making a cluster of stitches in the same stitch to 
-            create a raised texture. However, these projects also use many of the easier stitches as 
-            well, it's just a matter of how you use stitches that make a project look more complicated.</p>
-        </section>
+        
         <div class="container">
 
             <!-- Full-width images with number text -->
@@ -150,15 +139,43 @@
                 </script>
             </div>
           </div>
+          <section class="techniques">
+            <h2>Techniques</h2>
+            <p>Some of the patterns in these projects may be a bit more difficult, 
+            including the phoenix and dragon. These took more effort than many of
+            the other projects, because of the detail involved. These projects will take 
+            longer, and so you should plan ahead if you wish to make them.</p>            
+            <p>Stitches and techniques used for these projects includeThe shell stitch which 
+            uses a series of double crochets into the same stitch to create a shell-like pattern. 
+            The popcorn stitch which involves making a cluster of stitches in the same stitch to 
+            create a raised texture. However, these projects also use many of the easier stitches as 
+            well, it's just a matter of how you use stitches that make a project look more complicated.</p>
+        </section>
 
-        <ul class="patterns">
-          <li>Dragon and Pheonix/Peacock patterns were found <a href="https://www.hookedbykati.com/">here</a>.</li>
-          <li>Pokemon cross-stitch pattern was found <a href="https://lordlibidan.com/">here</a>.</li>
-          <li>Unicorn pattern was found <a href="thefriendlyredfox.com">here</a>.</li>
-          <li>Highland cow pattern was found <a href="cottontailandwhiskers.com">here</a>.</li>
-          <li>Patterns not listed were custom creations or came from patterns not available online.</li>
-        </ul>  
-    
+
+        <button type="button" class="collapsible">Pattern Links</button>
+          <ul class="patterns">
+            <li>Dragon and Pheonix/Peacock patterns were found <a href="https://www.hookedbykati.com/">here</a>.</li>
+            <li>Pokemon cross-stitch pattern was found <a href="https://lordlibidan.com/">here</a>.</li>
+            <li>Unicorn pattern was found <a href="thefriendlyredfox.com">here</a>.</li>
+            <li>Highland cow pattern was found <a href="cottontailandwhiskers.com">here</a>.</li>
+            <li>Patterns not listed were custom creations or came from patterns not available online.</li>
+          </ul>  
+        <script> 
+          var coll = document.getElementsByClassName("collapsible");
+          var i;
+          for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var patterns = this.nextElementSibling;
+              if (patterns.style.display === "block") {
+                patterns.style.display = "none";
+              } else {
+                patterns.style.display = "block";
+              }
+            });
+          }
+        </script>
     
         </section>
     </main>   
