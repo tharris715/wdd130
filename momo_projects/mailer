@@ -1,0 +1,45 @@
+const nodemailer = require('nodemailer');
+
+exports.handler = async (event, context) => {
+  const { name, email, message } = JSON.parse(event.body);
+
+  // Validate form data (optional)
+  if (!name || !email || !message) {
+    return {
+      statusCode: 400,
+      body: 'Missing required fields',
+    };
+  }
+
+  // Send email using Nodemailer library
+  const transporter = nodemailer.createTransport({
+    host: 'smtp.gmail.com',
+    port: 465,
+    secure: true,
+    auth: {
+      user: 'your@gmail.com',
+      pass: 'your-password',
+    },
+  });
+
+  const mailOptions = {
+    from: email,
+    to: 'your@email.com',
+    subject: 'Feedback from your website',
+    text: message,
+  };
+
+  try {
+    await transporter.sendMail(mailOptions);
+    return {
+      statusCode: 200,
+      body: 'Success',
+    };
+  } catch (err) {
+    console.log(err);
+    return {
+      statusCode: 500,
+      body: 'Error sending email',
+    };
+  }
+};
