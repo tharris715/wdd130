@@ -4,16 +4,17 @@
 
 nav a {
     text-align: center;
-    color: #283618;
+    color: #333333;
     text-decoration: none;
     font-size: 1.5em;
     padding: 35px;
 }
 
 nav {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  gap: 50px; /* Adjust the gap between items as needed */
 }
+
 
 #logo_link {
     padding-top: 5px;
@@ -33,20 +34,17 @@ nav {
     font-family: "Hachi Maru Pop", Helvetica, sans-serif;
 }
 
-#hero-img {
-    width: 100%;
-}
 
 header {
-    background-color: #BBC2E2;
+  background: linear-gradient(to right, #f08080, #ff1493, #603cb574);
     display: grid;
     grid-template-columns: 150px auto;
     font-family: Amiko, Helvetica, sans-serif;
+    
 }
 
 nav a:hover {
-    background-color: #CFCCD6;
-    color: #322E18;
+    color: #BBC2E2;
 }
 
 .logo {
@@ -67,7 +65,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 }
-.page2 {
+.store {
   grid-column: 2/3;
   font-family: Amiko, Helvetica, sans-serif;
   background-color: #CFCCD6;
@@ -78,7 +76,7 @@ footer {
   border-radius: 5px;
  }
 
-.page3 {
+.patterns {
   grid-column: 4/5;
   font-family: Amiko, Helvetica, sans-serif;
   background-color: #CFCCD6;
@@ -89,7 +87,7 @@ footer {
   border-radius: 5px;
  }
 
-.page2:hover, .page3:hover {
+.store:hover, .patterns:hover {
   background-color: #322E18;
   color: #BBC2E2;
 }
@@ -124,19 +122,48 @@ p {
   font-family: Amiko, Helvetica, sans-serif;
 }
 
-#background_info {
-  border: 3px inset #847979;
-  background: #cfccd674;
+.price_example {
+  border: 3px inset #ff1493;
+  background: #603cb574;
   padding: 5px;
   margin-top: 30px;
-  margin-bottom: 10px;;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-start;
 }
 
-#intro {
-  border: 3px inset #847979;
-  background: #cfccd674;
-  padding: 5px;
+
+.price_example {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
 }
+
+.item {
+  margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+.item h2,
+.item p {
+  padding:5px;
+  /* Add styles for price and description text as needed */
+}
+
+.item .content {
+  display: flex;
+  align-items: center;
+}
+
+.item img {
+  width: 65%;
+  /* Add any other styles for images as needed */
+}
+
+.item .content p {
+  margin-left: 10px; /* Adjust margin as needed */
+}
+
+
+
 
 #hometext h2{
   text-align: center;
